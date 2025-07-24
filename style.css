@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container {
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+@media (max-width: 500px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #2980b9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+li i {
+    cursor: pointer;
+    color: #444;
+}
+li i:hover {
+    color: red;
+}
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+li input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
